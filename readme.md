@@ -14,6 +14,7 @@ Log in as *root* and set **group write** permissions on the website files:
 
 ```bash
 docker exec -it $(docker ps -lq) /bin/bash
+chown -R www-data:www-data .
 chmod g+w . -R
 exit
 ```
